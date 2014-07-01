@@ -1,0 +1,101 @@
+<!-- Start of login page -->
+<div data-role="page" data-theme="f" id="createnote">
+
+    <div data-role="header" data-position="fixed" data-theme="f">
+        <h1>Create Invoice</h1>
+        <a href="#" id="btn_back" class="header-new-iconbtn" data-icon="goback" data-iconpos="notext" data-theme="g"></a>
+        <a href="#" id="btn_create" data-theme="i">Send</a>
+    </div><!-- /header -->
+
+    <div data-role="content">	
+        <div class="ui-post ui-shadow ui-tab-control">
+		    <fieldset class="ui-tab-header ui-tab-b" data-role="controlgroup" data-type="horizontal">
+		        <input type="radio" data-theme="f" name="radio-add-note" id="radio-add-header" value="on" checked="checked">
+		        <label for="radio-add-header">Header</label>
+		        <input type="radio" data-theme="f" name="radio-add-note" id="radio-add-content" value="off">
+		        <label for="radio-add-content">Content</label>
+		        <input type="radio" data-theme="f" name="radio-add-note" id="radio-add-remark" value="off">
+		        <label for="radio-add-remark">Remark</label>
+		    </fieldset>
+		</div>
+		<div class="ui-post ui-shadow">			
+            <div class="ui-post-content ui-tab-content">
+            	<div class="ui-post-content-inner">
+				<div class="note-header">
+			    	<form>
+			            <input type="text" name="contact-name" id="contact-name" value="">
+			            <input type="text" name="contact-email" id="contact-email">
+					</form>
+				</div>
+				<div class="note-content">
+					<p><small>Find contacts from your phonebook on your mobile device:</small></p>
+	
+				</div>
+				<div class="note-remark">
+			    	<form>
+					    <label>
+					        <input type="checkbox" data-theme="*" name="notify-contact">Save payment methods for future invoices
+					    </label>
+						<div data-role="fieldcontain">
+						    <select name="select-native-1" id="select-native-1" data-theme="c">
+						        <option value="1">Add payment methods</option>
+						        <option value="2">Cash payment</option>
+						        <option value="3">Check</option>
+						        <option value="4">Bank account</option>
+						    </select>
+						</div>
+					</form>
+				</div>
+				</div>
+			</div>
+        </div>
+    </div><!-- /content -->
+
+	<div>
+    <div data-role="panel" data-position-fixed="true" data-theme="a" class="nav-panel">
+        <ul data-role="listview" data-theme="a" class="nav-search">
+            <li class="nav-search-header" data-icon="delete">
+            	<a href="#" data-rel="close">
+                <img src="../img/logo_onion.png">
+                </a>
+            </li>
+            <li class="nav-search-largeitem" data-icon="profile">
+            	<a href="#" class="btn_nav_panel_profile">
+				<h2>Example Pte Ltd</h2>
+				<p>COUNTRY > Singapore</p>
+                </a>
+            </li>
+            <li class="nav-search-item" data-icon="activity">
+            	<a href="#" class="btn_nav_panel_activity">
+                <span id="Str_activity_btn_nav_panel_activity" class="ui-text-string">Activity</span>
+                </a>
+            </li>
+            <li class="nav-search-item" data-icon="connection">
+            	<a href="#" class="btn_nav_panel_connections">
+                <span id="Str_activity_btn_nav_panel_connections" class="ui-text-string">Connections</span>
+                </a>
+            </li>
+            <li class="nav-search-item" data-icon="documents">
+            	<a href="#" class="btn_nav_panel_documents">
+                <span id="Str_activity_btn_nav_panel_documents" class="ui-text-string">Documents</span>
+                </a>
+            </li>
+            <li class="nav-search-item" data-icon="myapps">
+            	<a href="#" class="btn_nav_panel_myapps">
+                <span id="Str_activity_btn_nav_panel_myapps" class="ui-text-string">My Apps</span>
+                </a>
+            </li>
+            <li class="nav-search-item" data-icon="setting">
+            	<a href="#" class="btn_nav_panel_setting">
+                <span id="Str_activity_btn_nav_panel_setting" class="ui-text-string">Settings</span>
+                </a>
+            </li>
+            <li class="nav-search-item" data-icon="logout">
+            	<a href="#" class="btn_nav_panel_logout">
+                <span id="Str_activity_btn_nav_panel_logout" class="ui-text-string">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div><!-- /panel -->
+	</div>
+</div><!-- /page -->

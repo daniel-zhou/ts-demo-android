@@ -1,0 +1,1 @@
+/* empty file for platforms other than BlackBerry */

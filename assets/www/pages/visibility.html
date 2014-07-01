@@ -1,0 +1,123 @@
+<!-- Start of login page -->
+<div data-role="page" data-theme="f" id="visibility" class="ui-nav-page">
+
+    <div data-role="header" data-position="fixed" data-theme="f">
+        <h1>Profile</h1>
+        <a href="#" id="btn_back" class="header-new-iconbtn" data-icon="goback" data-iconpos="notext" data-theme="g"></a>
+    </div><!-- /header -->
+
+    <div data-role="content">	
+        <div class="ui-post ui-shadow ui-tab-control">
+		    <fieldset class="ui-tab-header ui-tab-a" data-role="controlgroup" data-type="horizontal">
+		        <input type="radio" data-theme="f" name="radio-visibility-setting" id="radio-visibility-show" value="on" checked="checked">
+		        <label for="radio-visibility-show">Visibility</label>
+		        <input type="radio" data-theme="f" name="radio-visibility-setting" id="radio-visibility-link" value="off">
+		        <label for="radio-visibility-link">Share</label>
+		    </fieldset>
+		</div>
+        <div class="ui-post ui-shadow ui-tab-control">
+            <div class="ui-post-content ui-tab-content">
+            	<div class="ui-post-content-inner">
+				<div class="show">
+					<p><small>This page is visible to everybody, including users not using Tradeshift, and the data you choose to share on the right, will be publicly available:</small></p>
+			    	<form>
+						<fieldset data-role="controlgroup">
+						    <legend>Show these details on my public profile:</legend>
+						        <input type="radio" data-theme="*" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked">
+						        <label for="radio-choice-1">All company business details (Recommended)</label>
+						        <input type="radio" data-theme="*" name="radio-choice-1" id="radio-choice-2" value="choice-2">
+						        <label for="radio-choice-2">Name, log, industry, company description and web access</label>
+						        <input type="radio" data-theme="*" name="radio-choice-1" id="radio-choice-3" value="choice-3">
+						        <label for="radio-choice-3">Disable my profile page (Not recommended)</label>
+						        <input type="checkbox" data-theme="*" name="checkbox-1a" id="checkbox-1a" checked="">
+						        <label for="checkbox-1a">Allow contacts not using Tradeshift to invoice me from my profile page and let me get paid faster!</label>
+						</fieldset>
+					</form>
+				</div>
+				<div class="link">
+					<h4>Share you profile</h4>
+					<p><small>Share your profile page with your suppliers with the below link so they can easily invoice you faster.</small></p>
+					<p><small><a href="https://go.tradeshift.com/c/sg/examplecompany">https://go.tradeshift.com/c/sg/examplecompany</a></small></p>
+					<h4>Insert your recommendations on any webpage</h4>
+					<p><small>Customize the look below, click "grab code", and insert the script on any HTML page.</small></p>
+			    	<form>
+			    		<div class="ui-grid-c">
+			    		    <div class="ui-block-a"><div>Background color</div></div>
+			    		    <div class="ui-block-b"><div>Text color</div></div>
+			    		    <div class="ui-block-c"><div>Quote box color</div></div>
+			    		    <div class="ui-block-d"><div>Link color</div></div>
+			    		    <div class="ui-block-a"><div><input value="#ffffff"/></div></div>
+			    		    <div class="ui-block-b"><div><input value="#333333"/></div></div>
+			    		    <div class="ui-block-c"><div><input value="#dceffb"/></div></div>
+			    		    <div class="ui-block-d"><div><input value="#999999"/></div></div>
+			    		</div><!-- /grid-c -->
+						<fieldset data-role="controlgroup">
+						    <legend>Settings:</legend>
+						        <input type="radio" data-theme="*" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked">
+						        <label for="radio-choice-1">Horizontal alignment</label>
+						        <input type="radio" data-theme="*" name="radio-choice-1" id="radio-choice-2" value="choice-2">
+						        <label for="radio-choice-2">Vertical alignment</label>
+						        <input type="checkbox" data-theme="*" name="checkbox-1a" id="checkbox-1a" checked="">
+						        <label for="checkbox-1a">Include text</label>
+						        <input type="checkbox" data-theme="*" name="checkbox-1b" id="checkbox-1b" checked="">
+						        <label for="checkbox-1b">Include header</label>
+						</fieldset>
+			    		<fieldset class="ui-grid-a">
+			    		    <div class="ui-block-a"><button data-theme="i">Update preview</button></div>
+			    		    <div class="ui-block-b"><button data-theme="b">Grab code</button></div>
+			    		</fieldset>
+					</form>
+				</div>
+				</div>
+			</div>
+        </div>
+    </div><!-- /content -->
+
+	<div>
+    <div data-role="panel" data-position-fixed="true" data-theme="a" class="nav-panel">
+        <ul data-role="listview" data-theme="a" class="nav-search">
+            <li class="nav-search-header" data-icon="delete">
+            	<a href="#" data-rel="close">
+                <img src="../img/logo_onion.png">
+                </a>
+            </li>
+            <li class="nav-search-largeitem" data-icon="profile">
+            	<a href="#" class="btn_nav_panel_profile">
+				<h2>Example Pte Ltd</h2>
+				<p>COUNTRY > Singapore</p>
+                </a>
+            </li>
+            <li class="nav-search-item" data-icon="activity">
+            	<a href="#" class="btn_nav_panel_activity">
+                <span id="Str_activity_btn_nav_panel_activity" class="ui-text-string">Activity</span>
+                </a>
+            </li>
+            <li class="nav-search-item" data-icon="connection">
+            	<a href="#" class="btn_nav_panel_connections">
+                <span id="Str_activity_btn_nav_panel_connections" class="ui-text-string">Connections</span>
+                </a>
+            </li>
+            <li class="nav-search-item" data-icon="documents">
+            	<a href="#" class="btn_nav_panel_documents">
+                <span id="Str_activity_btn_nav_panel_documents" class="ui-text-string">Documents</span>
+                </a>
+            </li>
+            <li class="nav-search-item" data-icon="myapps">
+            	<a href="#" class="btn_nav_panel_myapps">
+                <span id="Str_activity_btn_nav_panel_myapps" class="ui-text-string">My Apps</span>
+                </a>
+            </li>
+            <li class="nav-search-item" data-icon="setting">
+            	<a href="#" class="btn_nav_panel_setting">
+                <span id="Str_activity_btn_nav_panel_setting" class="ui-text-string">Settings</span>
+                </a>
+            </li>
+            <li class="nav-search-item" data-icon="logout">
+            	<a href="#" class="btn_nav_panel_logout">
+                <span id="Str_activity_btn_nav_panel_logout" class="ui-text-string">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div><!-- /panel -->
+	</div>
+</div><!-- /page -->
